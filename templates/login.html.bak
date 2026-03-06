@@ -1,4 +1,5 @@
-<!doctype html>
+# Create the Login template
+login_html = '''<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -228,4 +229,9 @@
     </div>
   </div>
 </body>
-</html>
+</html>'''
+
+with open(f"{project_dir}/templates/login.html", "w") as f:
+    f.write(login_html)
+
+print("✓ Created templates/login.html")

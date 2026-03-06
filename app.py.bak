@@ -121,11 +121,11 @@ def init_db():
         db.create_all()
         if Member.query.count() == 0:
             sample_members = [
-                Member(member_id='Hacker-2241', full_name='Solomon Woyins', phone_number='+2349150709612', email='anonymousfunction149@gmail.com', progress=64, verified=True, status='inactive'),
-                Member(member_id='Hacker-7314', full_name='Ekade Obed', phone_number='+2349055568478', email='hackanonymously233@gmail.com', progress=64, verified=True, status='inactive'),
-                Member(member_id='Hacker-8801', full_name='Okoro Godstime', phone_number='+2347066268747', email='hackanonymously234@gmail.com', progress=90, verified=True, status='active'),
-                Member(member_id='Hacker-3301', full_name='Afurehkess', phone_number='+2349068192131', email='hackanonymously235@gmail.com', progress=60, verified=True, status='inactive'),
-                Member(member_id='Hacker-0105', full_name='King Winnie', phone_number='+2349035736399', email='hackanonymously236@gmail.com', progress=74, verified=True, status='active'),
+                Member(member_id='Hacker-2241', full_name='Solomon Woyins', phone_number='+234 915 070 9612', email='anonymousfunction149@gmail.com', progress=64, verified=True, status='inactive'),
+                Member(member_id='Hacker-7314', full_name='Ekade Obed', phone_number='+234 905 556 8478', email='hackanonymously233@gmail.com', progress=64, verified=True, status='inactive'),
+                Member(member_id='Hacker-8801', full_name='Okoro Godstime', phone_number='+234 706 626 8747', email='hackanonymously234@gmail.com', progress=90, verified=True, status='active'),
+                Member(member_id='Hacker-3301', full_name='Afurehkess', phone_number='+234 906 819 2131', email='hackanonymously235@gmail.com', progress=60, verified=True, status='inactive'),
+                Member(member_id='Hacker-0105', full_name='King Winnie', phone_number='+234 903 573 6399', email='hackanonymously236@gmail.com', progress=74, verified=True, status='active'),
             ]
             db.session.bulk_save_objects(sample_members)
             db.session.commit()

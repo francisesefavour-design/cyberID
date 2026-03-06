@@ -1,4 +1,5 @@
-<!doctype html>
+# Create the Admin Dashboard template (full CRUD)
+admin_html = '''<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -569,4 +570,9 @@
     }
   </script>
 </body>
-</html>
+</html>'''
+
+with open(f"{project_dir}/templates/admin.html", "w") as f:
+    f.write(admin_html)
+
+print("✓ Created templates/admin.html")

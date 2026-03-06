@@ -1,4 +1,5 @@
-<!doctype html>
+# Create the beautiful Public View template (read-only)
+public_html = '''<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -687,4 +688,9 @@
     verifiedFilter.addEventListener('change', filterTable);
   </script>
 </body>
-</html>
+</html>'''
+
+with open(f"{project_dir}/templates/public.html", "w") as f:
+    f.write(public_html)
+
+print("✓ Created templates/public.html")
